@@ -1,0 +1,10 @@
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\bin\Debug\myApp.dll
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\bin\Debug\myApp.pdb
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\obj\Debug\myApp.csproj.CoreCompileInputs.cache
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\obj\Debug\myApp.dll
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\obj\Debug\myApp.pdb
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\obj\Debug\myApp.csprojAssemblyReference.cache
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\bin\Debug\icon-dialog_32x32.png
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\bin\Debug\icon-get_32x32.png
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\bin\Debug\icon-web_32x32.png
+C:\Users\manue\source\repos\packt-my-revit-plug-in\myApp\bin\Debug\icon-send_32x32.png
