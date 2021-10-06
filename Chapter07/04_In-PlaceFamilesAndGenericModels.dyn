@@ -1,0 +1,322 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "04_In-Place Familes and Generic Models",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "List": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Element.Creator": {
+        "Key": "Revit.Elements.Element",
+        "Value": "RevitNodes.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "b8796d40-f999-41fd-b051-1303388bb189",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "ec58bd5a286b4591ac375181baba6ecd",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "4f087a79a7934ded8707e94f40d8a2d6",
+          "Name": "flatList",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "173d4cbdb790489fa2c0cb19ba0a678f",
+          "Name": "inplace families",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": ""
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "6e8681d454d04f3c92b6ab7ee721f1a6",
+      "Inputs": [
+        {
+          "Id": "3753641715094fa1892d9fdc855bad76",
+          "Name": "Category",
+          "Description": "The Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1de05a4f0b0a481abfba3baa722f6afb",
+          "Name": "Elements",
+          "Description": "An element type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 231,
+      "SelectedString": "OST_GenericModel",
+      "NodeType": "ExtensionNode",
+      "Id": "abffe6777e81446f8b9a7407f94c08a1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "7950dbc3fb884df5b4bab401dc9c9204",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "e4a9a4609070446aa252147e841be318",
+      "Inputs": [
+        {
+          "Id": "67feb87de7194e089de395649f4e3dae",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "cbc10fb0eb53401197240688aeac5d36",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "4d21aa57fa694755b3b7cfdb3a7e6819",
+      "Inputs": [
+        {
+          "Id": "11ea9d9f8aa84a2196bac5d674fddf6b",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9c1ee69bcec74b939d693ae3cba78e9f",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "173d4cbdb790489fa2c0cb19ba0a678f",
+      "End": "67feb87de7194e089de395649f4e3dae",
+      "Id": "1d20318cf19e48aab99964a49bc14041"
+    },
+    {
+      "Start": "1de05a4f0b0a481abfba3baa722f6afb",
+      "End": "11ea9d9f8aa84a2196bac5d674fddf6b",
+      "Id": "94fa703264af4384953d54093bf61327"
+    },
+    {
+      "Start": "7950dbc3fb884df5b4bab401dc9c9204",
+      "End": "3753641715094fa1892d9fdc855bad76",
+      "Id": "13882ef3a0dc47b79d6a2baf732e8a2f"
+    }
+  ],
+  "Dependencies": [
+    "b8796d40-f999-41fd-b051-1303388bb189"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Bakery",
+      "Version": "2019.5.8",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "ec58bd5a286b4591ac375181baba6ecd"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.1.11775",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -331282.90625,
+      "EyeY": 358895.5,
+      "EyeZ": 1601168.375,
+      "LookX": 331277.90625,
+      "LookY": -358884.5,
+      "LookZ": -1601176.375,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Report on Inplace Families",
+        "Id": "ec58bd5a286b4591ac375181baba6ecd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -263.13277309695997,
+        "Y": -198.692093971174
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Category",
+        "Id": "6e8681d454d04f3c92b6ab7ee721f1a6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -28.1927971175316,
+        "Y": -48.5435187045424
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Categories",
+        "Id": "abffe6777e81446f8b9a7407f94c08a1",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -263.13277309696,
+        "Y": -48.5435187045424
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "e4a9a4609070446aa252147e841be318",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -28.192797117531484,
+        "Y": -173.092093971174
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "4d21aa57fa694755b3b7cfdb3a7e6819",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 163.293214591303,
+        "Y": -48.5435187045424
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "eb00db75f65b446a8d0fa0f387fa3fbd",
+        "Title": "In-Place Families",
+        "Nodes": [
+          "ec58bd5a286b4591ac375181baba6ecd",
+          "e4a9a4609070446aa252147e841be318",
+          "e209477ff3fc46ec9c9372cfef606252"
+        ],
+        "Left": -273.13277309696,
+        "Top": -265.292093971174,
+        "Width": 425.33997597942857,
+        "Height": 184.79999999999998,
+        "FontSize": 18.0,
+        "InitialTop": -233.692093971174,
+        "InitialHeight": 205.60000000000002,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "c86e50c357a449839bd34f749fba1e2d",
+        "Title": "Generic Models",
+        "Nodes": [
+          "6e8681d454d04f3c92b6ab7ee721f1a6",
+          "abffe6777e81446f8b9a7407f94c08a1",
+          "4d21aa57fa694755b3b7cfdb3a7e6819"
+        ],
+        "Left": -273.13277309696,
+        "Top": -80.1435187045424,
+        "Width": 616.825987688263,
+        "Height": 124.19999999999999,
+        "FontSize": 18.0,
+        "InitialTop": -48.5435187045424,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "e209477ff3fc46ec9c9372cfef606252",
+        "Title": "Custom Node: Bakery v.2019.5.8",
+        "Nodes": [],
+        "Left": -263.13277309696,
+        "Top": -233.692093971174,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 813.37849314701225,
+    "Y": 519.83335163110064,
+    "Zoom": 1.2343714107597565
+  }
+}

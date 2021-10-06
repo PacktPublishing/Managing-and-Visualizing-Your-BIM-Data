@@ -1,0 +1,319 @@
+{
+  "Uuid": "10ef2bcb-32ae-4e61-82f5-a88372b70366",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "02_File Information",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Application.Document.Current",
+      "Id": "ef01da93c237424f883ac9b7dfe6327d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d7328b8eb4854fb9b3aceea8936485cf",
+          "Name": "Document",
+          "Description": "Document",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the current document\n\nDocument.Current: Document"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Application.Document.FilePath",
+      "Id": "2d7f22b7058a4c7d9005d81058bebac3",
+      "Inputs": [
+        {
+          "Id": "7461e6b5a3e2479e86d05e30f9f48dc3",
+          "Name": "document",
+          "Description": "Revit.Application.Document",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b112d45f54764789bccaeed06507647e",
+          "Name": "string",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "The full path of the Document.\n\nDocument.FilePath: string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "3df0961d-9d46-464f-9175-0a74eeb61bc1",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "19081fb8cc5f455c9ed4e0572bfd3c00",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "babac3a30c934828b763d8bf8c0da9e1",
+          "Name": "Name",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7f436fa9c8714b63a2da476e5d3c33cc",
+          "Name": "Version (int)",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a740e40d3a4c491ba46d088c0657c274",
+          "Name": "Build",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5e8171af0129479493e3bb8ae19ecc00",
+          "Name": "Language",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Retrieves the name, version and build of the current Revit application."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "0672c281-9887-40f9-886e-248abb55564b",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "bd1b76fa6cfd43209b0cad164021ae7d",
+      "Inputs": [
+        {
+          "Id": "905b6b56cc014e64bcaa6807bca6368f",
+          "Name": "path",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a6b52cdb0ffa40e5a30b25aaab3f2bd6",
+          "Name": "kbOnly",
+          "Description": "bool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "157654efa1384743b378e9d43a6776ee",
+          "Name": "size",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Outputs the the file size in kilobytes or megabytes. Provide a file path as a string. Set kbOnly to true for a consistent output."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "d7328b8eb4854fb9b3aceea8936485cf",
+      "End": "7461e6b5a3e2479e86d05e30f9f48dc3",
+      "Id": "503591d5515741728ff2335fa082332b"
+    },
+    {
+      "Start": "b112d45f54764789bccaeed06507647e",
+      "End": "905b6b56cc014e64bcaa6807bca6368f",
+      "Id": "afde1bc3b5e74adc9b87799b0444ebb8"
+    }
+  ],
+  "Dependencies": [
+    "3df0961d-9d46-464f-9175-0a74eeb61bc1",
+    "0672c281-9887-40f9-886e-248abb55564b"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Clockwork for Dynamo 2.x",
+      "Version": "2.3.0",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "19081fb8cc5f455c9ed4e0572bfd3c00"
+      ]
+    },
+    {
+      "Name": "spring nodes",
+      "Version": "110.0.2",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "bd1b76fa6cfd43209b0cad164021ae7d"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.1.11775",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -119481.75954150801,
+      "EyeY": 129444.1561699671,
+      "EyeZ": 577463.004450622,
+      "LookX": 119476.75954150801,
+      "LookY": -129433.1561699671,
+      "LookZ": -577471.004450622,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Document.Current",
+        "Id": "ef01da93c237424f883ac9b7dfe6327d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 211.926461840425,
+        "Y": 277.284740937351
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Document.FilePath",
+        "Id": "2d7f22b7058a4c7d9005d81058bebac3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 375.47207661923,
+        "Y": 277.284740937351
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Application.Version",
+        "Id": "19081fb8cc5f455c9ed4e0572bfd3c00",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 211.926461840426,
+        "Y": 476.299409645947
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Springs.File.Size",
+        "Id": "bd1b76fa6cfd43209b0cad164021ae7d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 610.06972060007706,
+        "Y": 277.22621890751691
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "f21e3dae87b946e59aebbd3c216c948e",
+        "Title": "File Version",
+        "Nodes": [
+          "19081fb8cc5f455c9ed4e0572bfd3c00",
+          "eb38aac715a44863bc0349f02d0f29a5"
+        ],
+        "Left": 201.926461840426,
+        "Top": 409.69940964594696,
+        "Width": 210.4,
+        "Height": 236.00000000000003,
+        "FontSize": 18.0,
+        "InitialTop": 441.299409645947,
+        "InitialHeight": 180.0,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "e417831fd4fe44fea54a78130f572ccc",
+        "Title": "File Size",
+        "Nodes": [
+          "ef01da93c237424f883ac9b7dfe6327d",
+          "2d7f22b7058a4c7d9005d81058bebac3",
+          "bd1b76fa6cfd43209b0cad164021ae7d",
+          "3fd1fe10820949ec8a70e643324149ef"
+        ],
+        "Left": 201.926461840425,
+        "Top": 210.62621890751691,
+        "Width": 634.943258759652,
+        "Height": 184.79999999999995,
+        "FontSize": 18.0,
+        "InitialTop": 242.22621890751691,
+        "InitialHeight": 180.05852202983408,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "eb38aac715a44863bc0349f02d0f29a5",
+        "Title": "Custom Node: Clockwork v.1.0.3",
+        "Nodes": [],
+        "Left": 211.926461840426,
+        "Top": 441.299409645947,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "3fd1fe10820949ec8a70e643324149ef",
+        "Title": "Custom Node: spring nodes v.204.1.0",
+        "Nodes": [],
+        "Left": 610.06972060007706,
+        "Top": 242.22621890751691,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 64.10599291567928,
+    "Y": -142.44155650316435,
+    "Zoom": 1.13758205229474
+  }
+}

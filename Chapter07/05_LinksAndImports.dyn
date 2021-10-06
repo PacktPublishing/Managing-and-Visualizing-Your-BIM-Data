@@ -1,0 +1,376 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "05_Links and Imports",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "6951ad79-d085-4850-bd0b-acc7153a71b1",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "b03d468e47bb4d02aedd51e396dd632c",
+      "Inputs": [
+        {
+          "Id": "9a765207967545f48e1705a5d11dce1d",
+          "Name": "toggle",
+          "Description": "bool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "55e4dce9bf90425c99cbaeb9ffdec360",
+          "Name": "links",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "009121219b7e4db99a08b320402f811a",
+          "Name": "imports",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Gets all linked and imported files in the document. NOTE: Does *not* retrieve linked Revit files."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "98458ceb-6e1f-49f2-ab12-e054d5034efc",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "6f50ce2b8e9d45d88f2ffe99bdecf499",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2b965189c6744427ae378b165a5133e8",
+          "Name": "Link Doc",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e91e243d73c74b268982da02d1076f42",
+          "Name": "Link Name",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7d029f4179084193891a7c4a67ecc215",
+          "Name": "Link Instance",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9dcb65f800a341739f3f445887f09b34",
+          "Name": "Link Instance Id",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3b3690a25e7d43ae90ab4b837f2647de",
+          "Name": "LinkType",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": ""
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "e4360cfc0c7943928352f8d2de1fc36e",
+      "Inputs": [
+        {
+          "Id": "320da120b4194406bfcaf1165cfc1466",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f293859d7dc24bf1a59d660aa4925d74",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "07e63988b60442c3a0a00a948a77e00c",
+      "Inputs": [
+        {
+          "Id": "856c9eb861914c30a330fb00aab3307b",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a574ccb28d2e49689b3ca7e83bb1aeb2",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "01ebf49c84864dd5908b1db378f210f5",
+      "Inputs": [
+        {
+          "Id": "faa3f746a6544b95998222eb02794404",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8716cd735f224b919e565a7c8fd51373",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "55e4dce9bf90425c99cbaeb9ffdec360",
+      "End": "320da120b4194406bfcaf1165cfc1466",
+      "Id": "2a42302a57834ba99dbb1b3f3f1865a4"
+    },
+    {
+      "Start": "009121219b7e4db99a08b320402f811a",
+      "End": "856c9eb861914c30a330fb00aab3307b",
+      "Id": "fd523c1745b44009b0d416c029051aec"
+    },
+    {
+      "Start": "2b965189c6744427ae378b165a5133e8",
+      "End": "faa3f746a6544b95998222eb02794404",
+      "Id": "5d176c79c7bd44b0898f5c1a92d74ec3"
+    }
+  ],
+  "Dependencies": [
+    "6951ad79-d085-4850-bd0b-acc7153a71b1",
+    "98458ceb-6e1f-49f2-ab12-e054d5034efc"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Bakery",
+      "Version": "2019.5.8",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "6f50ce2b8e9d45d88f2ffe99bdecf499"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.1.11775",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -137463.046875,
+      "EyeY": 148923.828125,
+      "EyeZ": 664372.5625,
+      "LookX": 137458.046875,
+      "LookY": -148912.828125,
+      "LookZ": -664380.5625,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Document.LinksAndImports",
+        "Id": "b03d468e47bb4d02aedd51e396dd632c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2.88359641734326,
+        "Y": 214.504775864866
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Get Linked RVT Documents",
+        "Id": "6f50ce2b8e9d45d88f2ffe99bdecf499",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2.8835964173431989,
+        "Y": -53.9803833458179
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "e4360cfc0c7943928352f8d2de1fc36e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 228.055675485486,
+        "Y": 214.612424242669
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "07e63988b60442c3a0a00a948a77e00c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 414.588039868514,
+        "Y": 242.354519615742
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "01ebf49c84864dd5908b1db378f210f5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 237.421467844454,
+        "Y": -53.719565050337309
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "155a2e54bae34717946bbb835cd72a29",
+        "Title": "Revit Links",
+        "Nodes": [
+          "6f50ce2b8e9d45d88f2ffe99bdecf499",
+          "01ebf49c84864dd5908b1db378f210f5",
+          "1bb616ba098544dab9eeda29c88a2e32"
+        ],
+        "Left": -7.1164035826568011,
+        "Top": -120.58038334581789,
+        "Width": 424.93787142711085,
+        "Height": 261.6,
+        "FontSize": 18.0,
+        "InitialTop": -88.9803833458179,
+        "InitialHeight": 180.26081829548059,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "c6ecd724510643938421f01c25e0c583",
+        "Title": "CAD Links and Imports",
+        "Nodes": [
+          "b03d468e47bb4d02aedd51e396dd632c",
+          "e4360cfc0c7943928352f8d2de1fc36e",
+          "07e63988b60442c3a0a00a948a77e00c",
+          "4f16922e01d2450e8827fff4ebcaa778"
+        ],
+        "Left": -7.11640358265674,
+        "Top": 147.904775864866,
+        "Width": 602.10444345117071,
+        "Height": 187.049743750876,
+        "FontSize": 18.0,
+        "InitialTop": 179.504775864866,
+        "InitialHeight": 207.849743750876,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "4f16922e01d2450e8827fff4ebcaa778",
+        "Title": "Custom Node: Clockwork v.1.0.3",
+        "Nodes": [],
+        "Left": 2.88359641734326,
+        "Top": 179.504775864866,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "1bb616ba098544dab9eeda29c88a2e32",
+        "Title": "Custom Node: Bakery v.2019.5.8",
+        "Nodes": [],
+        "Left": 2.8835964173431989,
+        "Top": -88.9803833458179,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 471.03505439481285,
+    "Y": 288.75456112718308,
+    "Zoom": 0.90411497073255942
+  }
+}

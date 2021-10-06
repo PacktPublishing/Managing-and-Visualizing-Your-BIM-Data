@@ -1,0 +1,524 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "06_Purgeable Elements",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "43870fd9-39c1-4a86-9042-e3edc738d02d",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "dd5fee692497498681efb962d4ac100d",
+      "Inputs": [
+        {
+          "Id": "962efa78008b4e3089e9266511b40252",
+          "Name": "Toggle",
+          "Description": "Set Toggle to TRUE to delete unused View Templates\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4568d8fe0b9445fcb844d8c38c7dbd11",
+          "Name": "out",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete all unused ViewTemplates in your file, except for 3D view templates, as they cannot be converted to work with Dynamo yet."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "c54d6dce-4532-4fa1-b167-6868ce5f9d28",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "f703a77405a94d95b570205cff99f6d4",
+      "Inputs": [
+        {
+          "Id": "48ce270e5641416fbbf9ce446f1bb125",
+          "Name": "Toggle",
+          "Description": "Set Toggle to TRUE to delete unused Filters\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4d3a17704fa04bac82fec22f6cbfbf2b",
+          "Name": "out",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete all unused filters in your project file"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "271ac4c86a794b89ae50cd786fe27d7f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "20fb6d692494424f812be6e8d140dd4d",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "dbd9a46a08fd4b33ae0eb924e2713869",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9b2e630d00e64cfea5556a44862c4294",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "79a860a5-2121-4cf1-8237-58293f9ef620",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "984230881e9a480bb1c272103df24bc7",
+      "Inputs": [
+        {
+          "Id": "e4aa5ef01bcf4466bfda2f0d3ad9b151",
+          "Name": "Toggle",
+          "Description": "Set Toggle to TRUE to delete imported Line Patterns\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bd3b93b69cbe40c490b091025b2e0f02",
+          "Name": "out",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Delete all the imported Line Patterns from CAD files."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "3b60d90b2cd846bd858569a6e7b4bafc",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "63a7fdfa6e5d485d84e12bd4c3abb61e",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "295119a043f24224a9acebf37686c095",
+      "Inputs": [
+        {
+          "Id": "113f93052c9d4fb3ad591fe3a0924449",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f4c8bd8935b14c868d74b7cea5d9eb65",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "a8dbd9f9b18c4212bbb1167ecb880718",
+      "Inputs": [
+        {
+          "Id": "6063e823c7f94eda9fc82978bbda4f86",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ed21e0dd87c6447aa323fc81529cf2a0",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "cd269744868745838e8f438d0f4dda92",
+      "Inputs": [
+        {
+          "Id": "7dbedd1cc4064a9c9e80c049a91c5a74",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "269b75262e5544a4b7724ae83463d0d5",
+          "Name": "count",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "4568d8fe0b9445fcb844d8c38c7dbd11",
+      "End": "113f93052c9d4fb3ad591fe3a0924449",
+      "Id": "bb2cc7e62b724777b08f11cd5be10459"
+    },
+    {
+      "Start": "4d3a17704fa04bac82fec22f6cbfbf2b",
+      "End": "6063e823c7f94eda9fc82978bbda4f86",
+      "Id": "60a4905aaa0249778aa509845a7e02cd"
+    },
+    {
+      "Start": "20fb6d692494424f812be6e8d140dd4d",
+      "End": "962efa78008b4e3089e9266511b40252",
+      "Id": "47d364777fe44230bac19a6da08a0565"
+    },
+    {
+      "Start": "9b2e630d00e64cfea5556a44862c4294",
+      "End": "48ce270e5641416fbbf9ce446f1bb125",
+      "Id": "d9bef49b1ead428098448c65f9737a36"
+    },
+    {
+      "Start": "bd3b93b69cbe40c490b091025b2e0f02",
+      "End": "7dbedd1cc4064a9c9e80c049a91c5a74",
+      "Id": "22496c07e3a64b0788f0daa97fe4b454"
+    },
+    {
+      "Start": "63a7fdfa6e5d485d84e12bd4c3abb61e",
+      "End": "e4aa5ef01bcf4466bfda2f0d3ad9b151",
+      "Id": "cc269d5074de4d9b82e1e749426baa7e"
+    }
+  ],
+  "Dependencies": [
+    "43870fd9-39c1-4a86-9042-e3edc738d02d",
+    "c54d6dce-4532-4fa1-b167-6868ce5f9d28",
+    "79a860a5-2121-4cf1-8237-58293f9ef620"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Modelical",
+      "Version": "2.2.19",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "dd5fee692497498681efb962d4ac100d",
+        "f703a77405a94d95b570205cff99f6d4",
+        "984230881e9a480bb1c272103df24bc7"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.1.11775",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -715262.0625,
+      "EyeY": 774872.8125,
+      "EyeZ": 3457068.0,
+      "LookX": 715257.0625,
+      "LookY": -774861.8125,
+      "LookZ": -3457076.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "DeleteUnusedViewTemplates",
+        "Id": "dd5fee692497498681efb962d4ac100d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 506.499685307768,
+        "Y": 235.398790373712
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DeleteUnusedFilters",
+        "Id": "f703a77405a94d95b570205cff99f6d4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 522.01199690204,
+        "Y": 398.503302916224
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "271ac4c86a794b89ae50cd786fe27d7f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 350.404390818952,
+        "Y": 235.398790373712
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "dbd9a46a08fd4b33ae0eb924e2713869",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 350.404390818952,
+        "Y": 398.503302916224
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "DeleteLinePatterns",
+        "Id": "984230881e9a480bb1c272103df24bc7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 522.410157322017,
+        "Y": 563.862190397493
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "3b60d90b2cd846bd858569a6e7b4bafc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 350.404390818952,
+        "Y": 563.862190397493
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "295119a043f24224a9acebf37686c095",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 737.634860706577,
+        "Y": 235.135663694733
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "a8dbd9f9b18c4212bbb1167ecb880718",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 738.747672868187,
+        "Y": 398.581518134563
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Count",
+        "Id": "cd269744868745838e8f438d0f4dda92",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 737.634860706577,
+        "Y": 563.902697613862
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "2df8cedc9b0346e6b0f7eb6e2b80b0d0",
+        "Title": "View Templates",
+        "Nodes": [
+          "dd5fee692497498681efb962d4ac100d",
+          "271ac4c86a794b89ae50cd786fe27d7f",
+          "295119a043f24224a9acebf37686c095",
+          "489086d042be4e8792d57a692fd458f4"
+        ],
+        "Left": 340.404390818952,
+        "Top": 168.798790373712,
+        "Width": 577.630469887625,
+        "Height": 159.2,
+        "FontSize": 18.0,
+        "InitialTop": 200.398790373712,
+        "InitialHeight": 180.0,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "cf07f02915b045ad90b4197dc36c5f66",
+        "Title": "Filters",
+        "Nodes": [
+          "f703a77405a94d95b570205cff99f6d4",
+          "dbd9a46a08fd4b33ae0eb924e2713869",
+          "a8dbd9f9b18c4212bbb1167ecb880718",
+          "0c40e34f1e5e4e74962e50a4b330fd64"
+        ],
+        "Left": 340.404390818952,
+        "Top": 331.903302916224,
+        "Width": 578.74328204923506,
+        "Height": 159.278215218339,
+        "FontSize": 18.0,
+        "InitialTop": 363.503302916224,
+        "InitialHeight": 180.07821521833898,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "52e6d80546c647f2a48370244fe41ce9",
+        "Title": "Line Patterns",
+        "Nodes": [
+          "984230881e9a480bb1c272103df24bc7",
+          "3b60d90b2cd846bd858569a6e7b4bafc",
+          "cd269744868745838e8f438d0f4dda92",
+          "e4f54be634974ddfa9b9cbf1b752ab6a"
+        ],
+        "Left": 340.404390818952,
+        "Top": 497.262190397493,
+        "Width": 577.630469887625,
+        "Height": 159.24050721636897,
+        "FontSize": 18.0,
+        "InitialTop": 528.862190397493,
+        "InitialHeight": 180.04050721636895,
+        "TextblockHeight": 21.6,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "489086d042be4e8792d57a692fd458f4",
+        "Title": "Custom Node: Modelical v.2.2.19",
+        "Nodes": [],
+        "Left": 506.499685307768,
+        "Top": 200.398790373712,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "0c40e34f1e5e4e74962e50a4b330fd64",
+        "Title": "Custom Node: Modelical v.2.2.19",
+        "Nodes": [],
+        "Left": 522.01199690204,
+        "Top": 363.503302916224,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e4f54be634974ddfa9b9cbf1b752ab6a",
+        "Title": "Custom Node: Modelical v.2.2.19",
+        "Nodes": [],
+        "Left": 522.410157322017,
+        "Top": 528.862190397493,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 227.46547686943944,
+    "Y": 10.136355083310917,
+    "Zoom": 0.83491571173151469
+  }
+}
