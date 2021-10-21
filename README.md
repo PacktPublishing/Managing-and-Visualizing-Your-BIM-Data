@@ -1,6 +1,6 @@
 # Managing and Visualizing Your BIM Data
 
-<a href="Managing and Visualizing Your BIM Data"><img src="https://static.packt-cdn.com/products/9781801073981/cover/smaller" alt="Managing and Visualizing Your BIM Data" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/managing-and-visualizing-your-bim-data/9781801073981"><img src="https://static.packt-cdn.com/products/9781801073981/cover/smaller" alt="Managing and Visualizing Your BIM Data" height="256px" align="right"></a>
 
 This is the code repository for [Managing and Visualizing Your BIM Data](https://www.packtpub.com/product/managing-and-visualizing-your-bim-data/9781801073981), published by Packt.
 
