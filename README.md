@@ -1,8 +1,8 @@
 # Managing and Visualizing Your BIM Data
 
-<a href="Managing and Visualizing Your BIM Data"><img src="Cover Image URL of the Book" alt="Managing and Visualizing Your BIM Data" height="256px" align="right"></a>
+<a href="Managing and Visualizing Your BIM Data"><img src="https://static.packt-cdn.com/products/9781801073981/cover/smaller" alt="Managing and Visualizing Your BIM Data" height="256px" align="right"></a>
 
-This is the code repository for [Managing and Visualizing Your BIM Data](Packt UTM URL of the Book), published by Packt.
+This is the code repository for [Managing and Visualizing Your BIM Data](https://www.packtpub.com/product/managing-and-visualizing-your-bim-data/9781801073981), published by Packt.
 
 **Understand the fundamentals of computer science for data visualization using Autodesk Dynamo, Revit, and Microsoft Power BI**
 
@@ -45,8 +45,8 @@ With the following software and hardware list you can run all code files present
 | -------- | ------------------------------------| -----------------------------------|
 | 1-12        | Autodesk Revit 2019 or higher                     | Windows, Mac OS  |
 | 1-12        | Autodesk Dynamo BIM 2.4 or higher             | Windows, Mac OS ) |
-| 1-12       | Microsoft Power BI Desktop             | Windows, Mac OS X, and Linux (Any) |
-| 1-12        | Microsoft Excel             | Windows, Mac OS X, and Linux (Any) |
+| 1-12       | Microsoft Power BI Desktop             | Windows, Mac OS  |
+| 1-12        | Microsoft Excel             | Windows, Mac OS  |
 
 
 
