@@ -44,7 +44,7 @@ With the following software and hardware list you can run all code files present
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
 | 1-12        | Autodesk Revit 2019 or higher                     | Windows, Mac OS  |
-| 1-12        | Autodesk Dynamo BIM 2.4 or higher             | Windows, Mac OS ) |
+| 1-12        | Autodesk Dynamo BIM 2.4 or higher             | Windows, Mac OS  |
 | 1-12       | Microsoft Power BI Desktop             | Windows, Mac OS  |
 | 1-12        | Microsoft Excel             | Windows, Mac OS  |
 
