@@ -55,7 +55,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
      ![image](https://user-images.githubusercontent.com/74169155/164410498-9b964d3a-a3e0-4e75-8bbc-3e29665c17b6.png)
  
   3.	Click the "Browse..." button and select the path of the required ".dll" Resources
-     ![image](https://user-images.githubusercontent.com/74169155/164412297-455b7da8-ae2c-4c31-a4b3-0de675025761.png
+     ![image](https://user-images.githubusercontent.com/74169155/164412297-455b7da8-ae2c-4c31-a4b3-0de675025761.png)
 
   
   
