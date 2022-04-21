@@ -48,14 +48,14 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 * Learn SOLIDWORKS 2020 [[Packt]](https://www.packtpub.com/product/learn-solidworks-2020/9781789804102) [[Amazon]](https://www.amazon.com/dp/1789804108)
   
  ## Errata
- * Page 52 (point 1):Extra steps on how to add a Reference path to the project
+ * Page 52 (point 1):
+   Extra steps on how to add a Reference path to the project
   1.	right click on "References" into the "Solution Explorer" Tab
   2.	select "Add Reference..."
      ![image](https://user-images.githubusercontent.com/74169155/164410498-9b964d3a-a3e0-4e75-8bbc-3e29665c17b6.png)
-
-
  
   3.	Click the "Browse..." button and select the path of the required ".dll" Resources
+     ![image](https://user-images.githubusercontent.com/74169155/164412297-455b7da8-ae2c-4c31-a4b3-0de675025761.png
 
   
   
