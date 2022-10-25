@@ -72,3 +72,7 @@ Italo-Brazilian architect with a passion for automation and process improvement,
 
 **Dounia** leverages BIM and Design Technology to provide professionals with methods and practices to improve project outcomes. With a background in Architecture, she has worked in France and Norway in all phases of building design and construction. Over the years, she has been a part of large and complex projects in the commercial, residential, office, and transportation sectors. Her current focus is on design automation, data visualization, and software interoperability.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801073981">https://packt.link/free-ebook/9781801073981 </a> </p>
